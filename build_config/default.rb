@@ -24,6 +24,7 @@ MRuby::Build.new do |conf|
      mruby-object-ext
      mruby-enum-lazy
      mruby-bin-config
+     mruby-compar-ext
   ].each do |gem|
     conf.gem :core => gem
   end
