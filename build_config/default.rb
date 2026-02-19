@@ -14,7 +14,18 @@ MRuby::Build.new do |conf|
   # conf.gem :git => 'git@github.com:mattn/mruby-onig-regexp.git', :branch => 'master', :options => '-v'
 
   # include the GEM box
-  conf.gembox 'default'
+  # conf.gembox 'default'
+
+  %w[
+     mruby-random
+     mruby-metaprog
+     mruby-math
+     mruby-object-ext
+     mruby-enum-lazy
+     mruby-bin-config
+  ].each do |gem|
+    conf.gem :core => gem
+  end
 
   # C compiler settings
   # conf.cc do |cc|
