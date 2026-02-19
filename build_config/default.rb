@@ -17,6 +17,7 @@ MRuby::Build.new do |conf|
   # conf.gembox 'default'
 
   %w[
+     mruby-io
      mruby-random
      mruby-metaprog
      mruby-math
