@@ -26,6 +26,7 @@ MRuby::Build.new do |conf|
      mruby-bin-config
      mruby-compar-ext
      mruby-array-ext
+     mruby-string-ext
   ].each do |gem|
     conf.gem :core => gem
   end
